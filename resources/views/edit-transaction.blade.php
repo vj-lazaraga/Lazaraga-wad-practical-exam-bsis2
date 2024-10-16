@@ -13,7 +13,7 @@
 
         <label for="id">ID:</label>
         <input type="text" id="ID" name="id" value="{{ $transaction->id}}"required><br>
-        <label for="transaction_title">Transaction_title:</label>
+        <label for="transaction_title">Transaction Title:</label>
         <input type="text" id="transaction_title" name="transaction_title" value="{{ $transaction->transaction_title}}" required><br>
         <label for="description">Description:</label>
         <input type="text" id="description" name="description" value="{{ $transaction->description}}"required><br>
