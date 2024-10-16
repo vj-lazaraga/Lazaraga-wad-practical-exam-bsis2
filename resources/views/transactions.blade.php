@@ -20,19 +20,6 @@
     <div>Transaction_number:{{ $transaction->transaction_number}}</div>
     
 
-    <form action="{{ route('deleteTransaction', ['id' => $transaction->id]) }}" method= "POST" 
-        onsubmit= "return confirm('Are you sure you want to delete this transaction?')">
-        @method ('DELETE')
-        @csrf
-        <button type="submit">Delete Transaction</button>
-    </form>
-
-    <form action="{{ route('editTransaction', ['id' => $transaction->id]) }}" method="GET">
-        <button type="submit">
-            Edit Transaction
-        </button>
-    </form>
-
     <form action="{{ route('viewTransaction', ['id' => $transaction->id]) }}" method="GET">
         <button type="submit">
             View Transaction

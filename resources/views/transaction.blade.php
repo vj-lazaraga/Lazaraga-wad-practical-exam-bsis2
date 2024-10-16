@@ -9,11 +9,6 @@
 
     <h1>TRANSACTION PAGE</h1>
 
-    <form action= "{{route('createTransaction') }}" method="GET">
-        <button type= "submit">Create Transaction</button>
-    </form>
-
-
     <div>Transaction title:{{ $transaction->transaction_title}}</div>
     <div>Description:{{ $transaction->description}}</div>
     <div>Status:{{ $transaction->status}}</div>
@@ -26,6 +21,13 @@
         </button>
     </form>
 
+    <form action="{{ route('deleteTransaction', ['id' => $transaction->id]) }}" method= "POST" 
+        onsubmit= "return confirm('Are you sure you want to delete this transaction?')">
+        @method ('DELETE')
+        @csrf
+        <button type="submit">Delete Transaction</button>
+    </form>
+    
     <form action="{{ route('showAllTransaction') }}" method="GET">
             <button type="submit">Back to Transactions</button>
     </form>
