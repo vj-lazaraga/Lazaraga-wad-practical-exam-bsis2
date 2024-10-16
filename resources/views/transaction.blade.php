@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANSACTION PAGE</title>
+</head>
+<body>
+
+    <h1>TRANSACTION PAGE</h1>
+
+    <form action= "{{route('createTransaction') }}" method="GET">
+        <button type= "submit">Create Transaction</button>
+    </form>
+
+
+    <div>Transaction title:{{ $transaction->transaction_title}}</div>
+    <div>Description:{{ $transaction->description}}</div>
+    <div>Status:{{ $transaction->status}}</div>
+    <div>Total Amount:{{ $transaction->total_amount}}</div>
+    <div>Transaction Number:{{ $transaction->transaction_number}}</div>
+
+    <form action="{{ route('editTransaction', ['id' => $transaction->id]) }}" method="GET">
+        <button type="submit">
+            Edit Transaction
+        </button>
+    </form>
+
+    <form action="{{ route('showAllTransaction') }}" method="GET">
+            <button type="submit">Back to Transactions</button>
+    </form>
+
+</body>
+</html>
