@@ -9,7 +9,7 @@
 
     <h1>TRANSACTION PAGE</h1>
 
-    <div>Transaction title:{{ $transaction->transaction_title}}</div>
+    <div>Transaction Title:{{ $transaction->transaction_title}}</div>
     <div>Description:{{ $transaction->description}}</div>
     <div>Status:{{ $transaction->status}}</div>
     <div>Total Amount:{{ $transaction->total_amount}}</div>
@@ -27,7 +27,7 @@
         @csrf
         <button type="submit">Delete Transaction</button>
     </form>
-    
+
     <form action="{{ route('showAllTransaction') }}" method="GET">
             <button type="submit">Back to Transactions</button>
     </form>
