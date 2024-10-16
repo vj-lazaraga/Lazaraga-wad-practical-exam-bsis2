@@ -13,7 +13,7 @@
 
         <label for="id">ID:</label>
         <input type="text" id="ID" name="id" required><br>
-        <label for="transaction_title">Transaction_title:</label>
+        <label for="transaction_title">Transaction Title:</label>
         <input type="text" id="transaction_title" name="transaction_title" required><br>
         <label for="description">Description:</label>
         <input type="text" id="description" name="description" required><br>
@@ -22,9 +22,9 @@
                 <option value="successful">Successful</option>
                 <option value="declined">Declined</option>
             </select><br>
-        <label for="total_amount">Total_amount:</label>
+        <label for="total_amount">Total Amount:</label>
         <input type="text" id="total_amount" name="total_amount" required><br>
-        <label for="transaction_number">Transaction_number:</label>
+        <label for="transaction_number">Transaction Number:</label>
         <input type="text" id="transaction_number" name="transaction_number" required><br>
 
         <button type="submit">Create Transaction</button>

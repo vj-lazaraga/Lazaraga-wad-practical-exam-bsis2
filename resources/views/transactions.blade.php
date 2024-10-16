@@ -13,11 +13,11 @@
     </form>
 
     @foreach ($transactions as $transaction)
-    <div>Transaction_title:{{ $transaction->transaction_title}}</div>  
+    <div>Transaction Title:{{ $transaction->transaction_title}}</div>  
     <div>Description:{{ $transaction->description}}</div>
     <div>Status:{{ $transaction->status}}</div>
-    <div>Total_amount:{{ $transaction->total_amount}}</div>
-    <div>Transaction_number:{{ $transaction->transaction_number}}</div>
+    <div>Total Amount:{{ $transaction->total_amount}}</div>
+    <div>Transaction Number:{{ $transaction->transaction_number}}</div>
     
 
     <form action="{{ route('viewTransaction', ['id' => $transaction->id]) }}" method="GET">

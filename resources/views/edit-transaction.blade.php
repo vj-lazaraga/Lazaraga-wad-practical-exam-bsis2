@@ -30,8 +30,6 @@
         <button type="submit">Update Transaction</button>
     </form>
 
-    <form action="{{ route('showAllTransaction') }}" method="GET">
-            <button type="submit">Back to Transactions</button>
-    </form>
+    
 </body>
 </html>
